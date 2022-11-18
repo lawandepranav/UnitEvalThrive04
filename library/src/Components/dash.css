@@ -3,7 +3,7 @@
     border-collapse: collapse;
     width: 80%;
     margin: auto;
-    margin-top: 100px;
+    margin-top: 40px;
     border: 1px solid black;
     
   }
@@ -20,9 +20,79 @@
   .customers th {
     padding-top: 12px;
     padding-bottom: 12px;
-    text-align: center;
+    text-align: left;
     background-color: #04AA6D;
     color: white;
     font-size: 18px;
     font-weight: 600;
   }
+  .button{
+    border: none;
+    color: red;
+    padding: 10px 22px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    background: transparent;
+  }
+  .button:hover{
+    cursor: pointer;
+    background-color: black;
+    color: white;
+    border-radius: 10px;
+  }
+  
+@media screen and (max-width: 750px) {
+  .customers {
+    width: 90%;
+  }
+  .customers tr{
+    font-size:14px ;
+  }
+  
+  .customers td, .customers th {
+    border: 1px solid #ddd;
+    padding: 6px;
+  }
+ .customers th {
+    padding-top: 8px;
+    padding-bottom: 8px;
+    text-align: left;
+    font-size: 16px;
+    font-weight: 500;
+  }
+  .button{
+    padding: 8px 12px;
+    font-size: 12px;
+  }
+  .button:hover{
+    border-radius: 5px;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .customers {
+    width: 100%;
+  }
+  
+  .customers td, .customers th {
+    padding: 0px;
+  }
+ .customers th {
+    padding-top: 0px;
+    padding-bottom: 0px;
+    text-align: left;
+    font-size: 12px;
+    font-weight: 500;
+  }
+  .customers tr{
+    font-size:10px ;
+  }
+  .button{
+    padding: 0px 0px;
+    font-size: 10px;
+  }
+  .button:hover{
+    border-radius: 0px;
+  }
+}

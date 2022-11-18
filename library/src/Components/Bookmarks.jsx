@@ -36,7 +36,7 @@ const Bookmarks = () => {
               <td>{item.content}</td>
               <td>{item.date}</td>
               <td>{item.category}</td>
-              <td>{item.price}</td>
+              <td>₹ {item.price}</td>
              
             </tr>
           );

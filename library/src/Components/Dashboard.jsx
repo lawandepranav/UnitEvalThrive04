@@ -42,15 +42,15 @@ const [myBook, setMybook]=React.useState()
     <td>{item.content}</td>
     <td>{item.date}</td>
     <td>{item.category}</td>
-    <td>{item.price}</td>
-    <td><button onClick={()=>{
+    <td>₹ {item.price}</td>
+    <td><button className="button" onClick={()=>{
          axios({
             method: 'post',
             url: `http://localhost:8000/my-books`,
             data:item
           });
     }}>Buy</button></td>
-    <td><button onClick={()=>{
+    <td><button className="button" onClick={()=>{
          axios({
             method: 'post',
             url: `http://localhost:8000/bookmarks`,

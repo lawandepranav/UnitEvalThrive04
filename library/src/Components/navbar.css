@@ -1,21 +1,121 @@
-   .navdiv{
-    height:80px;
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color: #333;
-    display: flex;
-    justify-content: space-around;
-    font-size: 24px;
-    font-weight: 650;
+.navbarDiv {
+    background-color: #07583b;
+  height: 87px;
+  position: sticky;
+  width: 100%;
+  z-index: 10;
 }
-.link{
-    color: white;
-    text-align: center;
-    padding: 14px 16px;
+
+.logo {
+  position: relative;
+  left: 25px;
+  top: 12px;
+  cursor: pointer;
+  width: 70px;
+}
+
+.linkDiv {
+  font-weight: 600;
+  display: flex;
+  gap: 30px;
+  position: absolute;
+  right: 60px;
+  top: 28px;
+}
+
+.links {
+  text-decoration: none;
+  color: white;
+  font-size: 22px;
+}
+
+.links:hover {
+  text-decoration: none;
+  color: rgb(100, 255, 218);
+  font-size: 22px;
+}
+
+.linkDiv :nth-child(6) {
+  text-decoration: none;
+  background: transparent;
+  border: 2px solid rgb(100, 255, 218);
+  color: rgb(100, 255, 218);
+  font-size: 20px;
+  border-radius: 6px;
+  font-weight: 600;
+  padding: 2px 4px 2px 4px;
+  cursor: pointer;
+}
+
+.dropMenu {
+  display: none;
+}
+
+.dropmenu {
+  text-decoration: none;
+  color: #0a192f;
+}
+
+.dropmenu img {
+  margin-right: 10px;
+}
+.home_link {
+  text-decoration: none;
+  color: white;
+  font-size: 24px;
+  font-weight: 650;
+  position: relative;
+  left: 80px;
+  top: 25px;
+}
+.home_link:hover {
     text-decoration: none;
-}
-.link:hover{
-    background-color: #111;
+    color: rgb(100, 255, 218);
+    font-size: 22px;
   }
+
+@media screen and (max-width: 750px) {
+  .linkDiv {
+    display: none;
+    width: 100%;
+  }
+  .home_link {
+    font-size: 18px;
+    left: 50px;
+  }
+
+  .dropMenu {
+    display: block;
+    position: absolute;
+    right: 60px;
+    top: 17px;
+  }
+
+  .menuIcon {
+    position: relative;
+    top: -2px;
+    right: -12px;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .navbarDiv {
+    width: 100%;
+    height: 75px;
+  }
+  .home_link {
+
+    left: 10px;
+  }
+
+  .logo {
+    left: 25px;
+    top: 22px;
+    height: 32px;
+  }
+
+  .dropMenu {
+    top: 19px;
+    right: 80px;
+  }
+}
