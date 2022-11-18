@@ -23,6 +23,66 @@
       "category": "oraha ",
       "price": "2022-11-01",
       "id": 3
+    },
+    {
+      "title": "jkj",
+      "author": "nkn",
+      "content": "khkh",
+      "category": "khk",
+      "price": "2022-11-17",
+      "id": 4
+    },
+    {
+      "title": "jkj",
+      "author": "nkn",
+      "content": "khkh",
+      "category": "khk",
+      "price": "2022-11-17",
+      "id": 5
+    }
+  ],
+  "bookmarks": [
+    {
+      "title": "pranav",
+      "author": "pranav",
+      "content": "pranav",
+      "category": "oraha ",
+      "price": "2022-11-01",
+      "id": 1
+    }
+  ],
+  "my-books": [
+    {
+      "title": "jkj",
+      "author": "nkn",
+      "content": "khkh",
+      "category": "khk",
+      "price": "2022-11-17",
+      "id": 5
+    },
+    {
+      "title": "jkj",
+      "author": "nkn",
+      "content": "khkh",
+      "category": "khk",
+      "price": "2022-11-17",
+      "id": 4
+    },
+    {
+      "title": "pranav",
+      "author": "pranav",
+      "content": "pranav",
+      "category": "oraha ",
+      "price": "2022-11-01",
+      "id": 2
+    },
+    {
+      "title": "pranav",
+      "author": "pranav",
+      "content": "pranav",
+      "category": "oraha ",
+      "price": "2022-11-01",
+      "id": 3
     }
   ]
 }

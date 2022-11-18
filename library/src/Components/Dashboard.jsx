@@ -1,10 +1,11 @@
 import React from "react"
 import axios from 'axios'
-
+import "./dash.css"
 
  const Dashboard=()=>{
 
 const [data, setData]=React.useState([])
+const [myBook, setMybook]=React.useState()
     React.useEffect(() => {
 
         axios.get(`http://localhost:8000/book-list`)
@@ -16,9 +17,12 @@ const [data, setData]=React.useState([])
           })
         
       }, []);
+
+  
+
     return(
         <div>
-            <table id="customers">
+            <table className="customers">
   <tr>
     <th>Name</th>
     <th>Author</th>
@@ -39,8 +43,20 @@ const [data, setData]=React.useState([])
     <td>{item.date}</td>
     <td>{item.category}</td>
     <td>{item.price}</td>
-    <td><button>Buy</button></td>
-    <td><button>Bookmark</button></td>
+    <td><button onClick={()=>{
+         axios({
+            method: 'post',
+            url: `http://localhost:8000/my-books`,
+            data:item
+          });
+    }}>Buy</button></td>
+    <td><button onClick={()=>{
+         axios({
+            method: 'post',
+            url: `http://localhost:8000/bookmarks`,
+            data:item
+          });
+    }}>Bookmark</button></td>
      </tr>
         )  
           })}
