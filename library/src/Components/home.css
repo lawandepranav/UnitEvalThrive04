@@ -1,0 +1,14 @@
+.input_box{width: 30%;
+padding: 12px 20px;
+margin: 8px 0;
+box-sizing: border-box;}
+.submit_but{
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}

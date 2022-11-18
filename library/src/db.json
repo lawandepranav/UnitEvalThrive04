@@ -1,0 +1,28 @@
+{
+  "book-list": [
+    {
+      "title": "pranav",
+      "author": "pranav",
+      "content": "pranav",
+      "category": "oraha ",
+      "price": "2022-11-01",
+      "id": 1
+    },
+    {
+      "title": "pranav",
+      "author": "pranav",
+      "content": "pranav",
+      "category": "oraha ",
+      "price": "2022-11-01",
+      "id": 2
+    },
+    {
+      "title": "pranav",
+      "author": "pranav",
+      "content": "pranav",
+      "category": "oraha ",
+      "price": "2022-11-01",
+      "id": 3
+    }
+  ]
+}
