@@ -8,6 +8,15 @@
       "category": "Fiction",
       "price": "720",
       "id": 1
+    },
+    {
+      "title": "Eloquent JavaScript",
+      "author": "Marijn Haverbeke",
+      "content": "JavaScript lies at the heart of almost every modern web application",
+      "date": "2021-06-01",
+      "category": "Education",
+      "price": "1120",
+      "id": 2
     }
   ],
   "bookmarks": [
